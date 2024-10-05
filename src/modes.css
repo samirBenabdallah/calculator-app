@@ -1,0 +1,48 @@
+.theme-2 {
+  /* ? Theme 2 */
+  /* Backgrounds */
+  --main-background: hsl(0, 0%, 90%);
+  --toggle-keypad-background: hsl(0, 5%, 81%);
+  --screen-background: hsl(0, 0%, 93%);
+  /* Keys */
+  --key-background: hsl(185, 42%, 37%);
+  /* !--key-shadow: hsl(185, 58%, 25%); */
+  --key-toggle-background: #ca5502;
+  /* !--Dark-red-key-shadow: hsl(25, 99%, 27%); */
+  --main-key-background: hsl(45, 7%, 89%);
+  /* !--Grayish-orange-key-shadow: hsl(35, 11%, 61%); */
+  /* Text */
+  --equal: #fff;
+  --text: #fff;
+  --numbers: hsl(60, 10%, 19%);
+  --result: hsl(60, 10%, 19%);
+}
+.theme-3 {
+  /* ? Theme 3 */
+  /* Backgrounds */
+  --main-background: hsl(268, 75%, 9%);
+  --toggle-keypad-background: hsl(268, 71%, 12%);
+  --screen-background: hsl(268, 71%, 12%);
+  /* Keys */
+  --key-background: hsl(281, 89%, 26%);
+  /* !--key-shadow: hsl(285, 91%, 52%); */
+  --key-toggle-background: hsl(176, 100%, 44%);
+  /* !--Dark-red-key-shadow: hsl(177, 92%, 70%); */
+  --main-key-background: hsl(268, 47%, 21%);
+  /* !--Grayish-orange-key-shadow: hsl(290, 70%, 36%); */
+  /* Text */
+  --numbers: hsl(52, 100%, 62%);
+  --result: hsl(52, 100%, 62%);
+  --equal: hsl(198, 20%, 13%);
+  --text: #fff;
+}
+.theme-2 {
+  .toggle::before {
+    transform: translate(150%, -50%) !important;
+  }
+}
+.theme-3 {
+  .toggle::before {
+    transform: translate(297%, -50%) !important;
+  }
+}

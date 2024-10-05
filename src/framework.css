@@ -1,0 +1,34 @@
+:root {
+  --white: white;
+  /* ? Theme 1 */
+  /* Backgrounds */
+  --main-background: #3a4764;
+  --toggle-keypad-background: #232c43;
+  --screen-background: #182034;
+  /* Keys */
+  --key-background: #637097;
+  /* !--key-shadow: #404e72; */
+  --key-toggle-background: #d03f2f;
+  /*! --Dark-red-key-shadow: hsl(6, 70%, 34%); */
+  --main-key-background: hsl(30, 25%, 89%);
+  /*! --Grayish-orange-key-shadow: hsl(28, 16%, 65%); */
+  /* Text */
+  --equal: #fff;
+  --result: #fff;
+  --text: #fff;
+  --numbers: hsl(221, 14%, 31%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-weight: 700;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

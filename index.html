@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/framework.css" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/modes.css" />
+    <link rel="stylesheet" href="src/media.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body class="flex-center">
+    <main>
+      <header>
+        <p>calc</p>
+        <section class="theme">
+          <p>THEME</p>
+          <div>
+            <div class="numbers">
+              <p data-number="1">1</p>
+              <p data-number="2">2</p>
+              <p data-number="3">3</p>
+            </div>
+            <div class="toggle"></div>
+          </div>
+        </section>
+      </header>
+      <section class="result">
+        <h1>0</h1>
+      </section>
+      <section class="buttons">
+        <div class="button flex-center" data="7">7</div>
+        <div class="button flex-center" data="8">8</div>
+        <div class="button flex-center" data="9">9</div>
+        <div class="button flex-center" data="del" id="del">del</div>
+        <div class="button flex-center" data="4">4</div>
+        <div class="button flex-center" data="5">5</div>
+        <div class="button flex-center" data="6">6</div>
+        <div class="button flex-center" data="+">+</div>
+        <div class="button flex-center" data="1">1</div>
+        <div class="button flex-center" data="2">2</div>
+        <div class="button flex-center" data="3">3</div>
+        <div class="button flex-center" data="-">-</div>
+        <div class="button flex-center" data=".">.</div>
+        <div class="button flex-center" data="0">0</div>
+        <div class="button flex-center" data="/">/</div>
+        <div class="button flex-center" data="*">x</div>
+        <div class="button flex-center" data="reset">reset</div>
+        <div class="button flex-center" data="equal">=</div>
+      </section>
+    </main>
+    <script src="src/index.js"></script>
+  </body>
+</html>

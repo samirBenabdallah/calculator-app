@@ -1,0 +1,97 @@
+body {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  font-family: "League Spartan", sans-serif;
+  background-color: var(--main-background);
+}
+main {
+  background-color: inherit;
+  width: 300px;
+  height: 500px;
+}
+header {
+  color: var(--result);
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  .theme {
+    font-size: 10px;
+    width: max-content;
+    display: flex;
+    align-items: end;
+    > p {
+      margin-right: 10px;
+    }
+    > div {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 30px;
+      width: 40px;
+      .numbers {
+        margin-bottom: 5px;
+        padding-inline: 2px;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+      }
+      .toggle {
+        border-radius: 30px;
+        width: 100%;
+        height: 20px;
+        background-color: var(--toggle-keypad-background);
+        position: relative;
+        &::before {
+          content: "";
+          height: 10px;
+          width: 10px;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%) translateX(3px);
+          background-color: var(--key-toggle-background);
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+}
+.result {
+  border-radius: 10px;
+  margin-block: 30px;
+  background-color: var(--screen-background);
+  display: flex;
+  justify-content: end;
+  padding: 20px;
+  font-size: 32px;
+  color: var(--result);
+}
+.buttons {
+  border-radius: 10px;
+  background-color: var(--screen-background);
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 40px);
+  grid-gap: 20px;
+  .button {
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 28px;
+    color: var(--numbers);
+    background-color: var(--main-key-background);
+    &[data="reset"] {
+      grid-area: 5 / 1 / 6 / 3;
+    }
+    &[data="equal"] {
+      color: var(--equal);
+      grid-area: 5 / 3 / 6 / 5;
+      background-color: var(--key-toggle-background);
+    }
+    &[data="del"],
+    &[data="reset"] {
+      color: var(--text);
+      background-color: var(--key-background);
+    }
+  }
+}
